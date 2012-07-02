@@ -8,6 +8,7 @@ gem 'rails', '3.2.6'
 gem 'sqlite3'
 gem 'execjs'
 gem 'therubyracer'
+gem 'bootstrap-sass', '~> 2.0.4.0'
 
 
 # Gems used only for assets and not required
