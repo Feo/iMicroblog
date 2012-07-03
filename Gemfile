@@ -9,6 +9,7 @@ gem 'sqlite3'
 gem 'execjs'
 gem 'therubyracer'
 gem 'bootstrap-sass', '~> 2.0.4.0'
+gem 'bcrypt-ruby', '3.0.1'
 
 
 # Gems used only for assets and not required
@@ -51,4 +52,8 @@ group :test do
   gem 'libnotify', '0.5.9'
   gem 'guard-spork', '0.3.2'
   gem 'spork', '0.9.0'
+end
+
+group :development do
+	gem 'annotate', ">=2.5.0.pre1"
 end
