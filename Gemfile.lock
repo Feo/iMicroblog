@@ -88,6 +88,7 @@ GEM
     guard-spork (0.3.2)
       guard (>= 0.8.4)
       spork (>= 0.8.4)
+    haml (3.1.6)
     hike (1.2.1)
     i18n (0.6.0)
     journey (1.0.4)
@@ -204,6 +205,7 @@ DEPENDENCIES
   guard-cucumber
   guard-rspec (= 0.5.5)
   guard-spork (= 0.3.2)
+  haml
   jquery-rails
   libnotify (= 0.5.9)
   rails (= 3.2.6)

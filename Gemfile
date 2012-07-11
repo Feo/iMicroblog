@@ -13,6 +13,7 @@ gem 'bcrypt-ruby', '3.0.1'
 gem 'faker'
 gem 'will_paginate', '~>3.0.3'
 gem 'bootstrap-will_paginate', '~>0.0.7'
+gem 'haml'
 
 
 # Gems used only for assets and not required
