@@ -1,0 +1,14 @@
+-provide(:title, "Sign in")
+%h1 Sign in
+.row
+	.span6.offset3
+		=form_tag sessions_path do
+			=label_tag :email
+			=text_field_tag :email
+
+			=label_tag :password
+			=password_field_tag :password
+
+			=submit_tag "Sign in", :class => "btn btn-large btn-primary"
+		New user?
+		=link_to "Sign up now!", signup_path
