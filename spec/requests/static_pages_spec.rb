@@ -31,6 +31,12 @@ describe "StaticPages" do
 					page.should have_selector("li##{item.id}", :text => item.content)
 				end
 			end
+
+			it "should have the right micropost counts" do
+				page.should have_content("2 microposts")				
+				expect { click_link "delete" }.should change(Micropost, :count).by(-1)
+				page.should have_content("1 micropost")
+			end 
 		end
 	end
  
