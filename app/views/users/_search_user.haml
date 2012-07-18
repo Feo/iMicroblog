@@ -1,0 +1,6 @@
+.search_user
+	=form_tag users_path, :method => "get" do
+		=label_tag :search, "Search User:"
+		=text_field_tag :search
+
+		=submit_tag "Search", :class => "btn btn-large btn-primary"

@@ -215,6 +215,17 @@ input, textarea, select, .uneditable-input {
   }
 }
 
+.search_user{
+    border:1px solid #bebebe;
+    border-radius:6px;
+    margin:5px 0px 10px 0px;
+    padding:5px 0px 5px 3px;
+    clear:both;
+    #search {
+    	height: 30px;
+    }
+}
+
 /* microposts */
 
 .microposts {
