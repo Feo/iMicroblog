@@ -191,6 +191,24 @@ describe User do
 		end
 	end
 
+  describe "relationship association" do
+		let(:follower) { FactoryGirl.create(:user) }
+		let(:followed) { FactoryGirl.create(:user) }
+		before do
+			follower.follow!(followed)
+   	end
+
+    it "should destroy association relationships" do
+			follower.destroy
+			Relationship.where("follower_id in (?) AND followed_id in (?)", follower.id, followed.id).should be_empty
+    end
+
+    it "should destroy association reverse_relationships" do
+			followed.destroy
+			Relationship.where("follower_id in (?) AND followed_id in (?)", follower.id, followed.id).should be_empty
+    end
+  end
+
 	describe "following" do
 		let(:other_user) { FactoryGirl.create(:user) }
 		before do
