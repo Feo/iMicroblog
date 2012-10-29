@@ -1,4 +1,6 @@
+require 'split/dashboard'
 Microblog::Application.routes.draw do
+  mount Split::Dashboard => "/split"
 	resources :users do
     member do
       get :following, :followers

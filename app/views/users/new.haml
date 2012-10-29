@@ -1,6 +1,14 @@
 -provide :title, "Sign Up"
 %h1
 	Sign up
+-ab_test("signup", "plan_1", "plan_2") do |plan|
+	-case plan
+	-when "plan_1"
+		%h2
+			This is the testing paragraph for plan 1. AAAAAAAAA
+	-when "plan_2"
+		%h2
+			This is the testing paragraph for plan 2. BBBBBBBBB
 .row
 	.span6.offset3
 		=form_for(@user) do |f|

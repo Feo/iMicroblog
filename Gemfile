@@ -14,6 +14,7 @@ gem 'faker'
 gem 'will_paginate', '~>3.0.3'
 gem 'bootstrap-will_paginate', '~>0.0.7'
 gem 'haml'
+gem 'split'
 
 
 # Gems used only for assets and not required
